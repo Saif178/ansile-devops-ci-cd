@@ -4,3 +4,14 @@ dev2 ansible_host=44.202.241.138
 
 [aq]
 qa1 ansible_host=54.84.211.148
+
+[first]
+dev1
+sqa1
+
+[groupofgroups:children]
+dev
+first
+
+[devsubset]
+dev[1:2]
